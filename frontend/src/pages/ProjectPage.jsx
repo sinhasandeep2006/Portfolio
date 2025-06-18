@@ -28,7 +28,7 @@ const projects = [
     image: bst,
     tags: ["React", "D3.js", "Bootstrap", "JavaScript"],
     demoUrl: "https://visualizer-rose.vercel.app/",
-    githubUrl: "https://github.com/sinhasandeep2006/bst-visualizer",
+    githubUrl: "https://github.com/sinhasandeep2006/Binary-tree",
   },
   {
     id: 3,
@@ -66,7 +66,7 @@ const projects = [
     image: adough,
     tags: ["HTML", "CSS", "Bootstrap", "EJS", "JavaScript", "Node.js", "Express.js", "MongoDB"],
     demoUrl: "https://adoughrable-online-5tkc.onrender.com",
-    githubUrl: "https://github.com/sinhasandeep2006/Adoughrable.online",
+    githubUrl: "https://github.com/sinhasandeep2006/bloging",
   },
   {
     id: 6,

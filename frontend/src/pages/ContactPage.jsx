@@ -10,7 +10,10 @@ import {
   Send,
   Twitch,
   Twitter,
+  Github,
+   Code
 } from "lucide-react";
+
 import { cn } from "./../lib/utils";
 import { useToast } from "./../hooks/use-toast";
 import { useState } from "react";
@@ -114,17 +117,14 @@ const ContactPage = () => {
             <div className="pt-8">
               <h4 className="font-medium mb-4"> Connect With Me</h4>
               <div className="flex space-x-4 justify-center">
-                <a href="#" target="_blank">
+                <a href="https://linkedin.com/in/sandeep-sinha-full-stack" target="_blank">
                   <Linkedin />
                 </a>
-                <a href="#" target="_blank">
-                  <Twitter />
+                <a href="https://leetcode.com/u/sinhaSandeep/" target="_blank">
+                  < Code />
                 </a>
-                <a href="#" target="_blank">
-                  <Instagram />
-                </a>
-                <a href="#" target="_blank">
-                  <Twitch />
+                <a href="https://github.com/sinhasandeep2006" target="_blank">
+                  <Github />
                 </a>
               </div>
             </div>
