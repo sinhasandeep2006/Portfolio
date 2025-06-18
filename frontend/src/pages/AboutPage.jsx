@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import meabhout from "../assets/Cross-platform software.mp4";
 import ThemeToggle from "./../components/ThemeToggle";
-import cv from "../assets/Resume.pdf.pdf"
+import cv from "../assets/Resume.pdf"
 const AboutPage = () => {
   return (
     <section className="py-24 px-4 relative w-full">
@@ -98,7 +98,7 @@ const AboutPage = () => {
                   download
                 className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
               >
-                Download CV
+                Download Resume
               </a>
             </div>
           </div>
