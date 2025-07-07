@@ -83,7 +83,7 @@ const ContactPage = () => {
                     href="mailto:hello@gmail.com"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    1233sandeepsinha@gmail.com
+                    sandeep.sinha.dev@gmail.com
                   </a>
                 </div>
               </div>
