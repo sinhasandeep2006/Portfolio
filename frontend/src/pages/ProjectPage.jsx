@@ -97,7 +97,8 @@ const projects = [
     description:
       "A sleek and responsive frontend application for user management operations. It supports Create, Read, Update, and Delete (CRUD) features integrated with a third-party API. The app uses Bootstrap modals and dynamic forms for smooth UX. Built with React and Axios, it provides real-time updates and includes error handling for all API interactions.",
     image: usermanagemen,
-    tags: ["React.js", "Bootstrap", "Axios", "REST API"],
+    tags: ["React.js", "Vite", "Tailwind CSS", "Bootstrap", "Axios", "Firebase Auth", "JWT", "MongoDB", "Node.js", "Express.js", "REST API", "Multer", "Chart.js", "Recharts", "ExcelJS"],
+
     demoUrl: "https://user-mangment.vercel.app/",
     githubUrl: "https://github.com/sinhasandeep2006/user-Mangment.git",
   },
@@ -105,11 +106,11 @@ const projects = [
     id: 9,
     title: "Coming soon.......",
     description:
-      "A sleek and responsive frontend application for user management operations. It supports Create, Read, Update, and Delete (CRUD) features integrated with a third-party API. The app uses Bootstrap modals and dynamic forms for smooth UX. Built with React and Axios, it provides real-time updates and includes error handling for all API interactions.",
+      "",
     image: usermanagemen,
-    tags: ["React.js", "Bootstrap", "Axios", "REST API"],
-    demoUrl: "https://user-mangment.vercel.app/",
-    githubUrl: "https://github.com/sinhasandeep2006/user-Mangment.git",
+    tags: [],
+    demoUrl: "",
+    githubUrl: "",
   },
 ];
 
