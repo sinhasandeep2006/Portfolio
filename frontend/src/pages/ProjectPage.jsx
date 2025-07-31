@@ -8,12 +8,22 @@ import adough from "../assets/adough.png";
 import bst from "../assets/bst.png";
 import usermanagemen from "../assets/usermanagemen.png";
 import hangman from "../assets/hangman.png";
-
+import shirtCustomizer from "../assets/Screenshot 2025-07-31 185429.png"
 import taskBuddy from "../assets/taskBuddy.png"
 
 const projects = [
+   {
+  id: 1,
+  title: "3D Shirt Customizer",
+  description:
+    "3D Shirt Customizer is an interactive full-stack web application that allows users to design and personalize shirts in real time. Users can pick colors, upload logos, and generate AI-based textures using OpenAI’s DALL·E API. Built with Three.js and @react-three/fiber for 3D rendering, it features a Node.js and MongoDB backend for handling image uploads via Cloudinary and secure API calls. The app includes responsive UI, smooth animations, and reactive state management.",
+  image: shirtCustomizer,
+  tags: ["React.js", "Three.js", "@react-three/fiber", "@react-three/drei", "Vite", "Tailwind CSS", "Valtio", "Framer Motion", "OpenAI API", "Cloudinary", "Node.js", "Express.js", "MongoDB", "REST API"],
+  demoUrl: "https://frontend-threejs-agoh.vercel.app/",
+  githubUrl: "https://github.com/sinhasandeep2006/frontend-threejs.git"
+},
  {
-    id: 1,
+    id: 2,
     title: "Task Buddy",
     description:
       "Task Buddy is a full-featured and collaborative task management platform designed for teams and individuals. Users can create, update, and track tasks, manage priorities, and visualize progress through interactive charts. The platform supports secure Google authentication via Firebase, file uploads, Excel report exports, and task history tracking. Admins can manage users and tasks through a dedicated dashboard with role-based access control and JWT-secured APIs.",
@@ -24,7 +34,7 @@ const projects = [
   },
 
   {
-    id: 2,
+    id: 3,
     title: "Forever",
     description:
       "Forever is a full-featured and scalable eCommerce platform that provides seamless online shopping experiences. Users can search for products, manage carts, and securely checkout using integrated payment gateways like Stripe and Razorpay. The admin dashboard allows product management and real-time analytics tracking. Built with robust backend APIs and JWT-based authentication for secure access.",
@@ -34,7 +44,7 @@ const projects = [
     githubUrl: "https://github.com/sinhasandeep2006/Forever",
   },
   {
-    id: 3,
+    id: 4,
     title: "BST Visualizer",
     description:
       "BST Visualizer is a learning tool that visually represents Binary Search Tree operations including insertion, deletion, and traversal. Designed for students and developers to interactively explore how data structures work in real time. With D3.js animations and a React UI, users can control the pace of visualizations and better grasp core CS concepts.",
@@ -44,7 +54,7 @@ const projects = [
     githubUrl: "https://github.com/sinhasandeep2006/Binary-tree",
   },
   {
-    id: 4,
+    id: 5,
     title: "Hangman Game",
     description:
       "A modern and responsive implementation of the classic Hangman game built with React and TypeScript. Features a clean, intuitive interface where users guess letters to reveal hidden words. It includes dynamic keyboard interaction, visual feedback for correct and incorrect guesses, and mobile-responsive design to ensure a seamless experience across all devices.",
@@ -54,7 +64,7 @@ const projects = [
     githubUrl: "https://github.com/sinhasandeep2006/Hangman",
   },
   {
-    id: 5,
+    id: 6,
     title: "StoryApp",
     description:
       "StoryApp is a MERN-stack based travel story platform where users can create, edit, and manage their travel experiences. Features include user authentication with JWT, media uploads using Multer, story search by date or keywords, and a personalized dashboard. Built with responsive design and optimized data flow using Context API and Axios.",
@@ -72,7 +82,7 @@ const projects = [
     githubUrl: "https://github.com/sinhasandeep2006/Story_app.git",
   },
   {
-    id: 6,
+    id: 7,
     title: "Adoughrable.online",
     description:
       "Adoughrable.online is a dynamic blogging platform designed for baking and recipe lovers. Users can browse, search, and engage with blog posts. Admins and users have secure access through JWT-based login. The platform supports dynamic search, full post CRUD operations, and is built using EJS templating, Bootstrap for UI, and MongoDB for scalable storage.",
@@ -82,7 +92,7 @@ const projects = [
     githubUrl: "https://github.com/sinhasandeep2006/bloging",
   },
   {
-    id: 7,
+    id: 8,
     title: "CFG to PDA Converter",
     description:
       "An educational tool that helps convert Context-Free Grammars (CFGs) to equivalent Pushdown Automata (PDA). Ideal for students studying formal language theory, it features a clean UI for entering grammars and visualizes transitions in real time. Built using pure JavaScript, D3.js for animations, and styled with CSS for clarity.",
@@ -92,7 +102,7 @@ const projects = [
     githubUrl: "https://github.com/sinhasandeep2006/Convert_cga_to_pda.git",
   },
   {
-    id: 8,
+    id: 9,
     title: "User Management App",
     description:
       "A sleek and responsive frontend application for user management operations. It supports Create, Read, Update, and Delete (CRUD) features integrated with a third-party API. The app uses Bootstrap modals and dynamic forms for smooth UX. Built with React and Axios, it provides real-time updates and includes error handling for all API interactions.",
@@ -103,7 +113,7 @@ const projects = [
     githubUrl: "https://github.com/sinhasandeep2006/user-Mangment.git",
   },
   {
-    id: 9,
+    id: 10,
     title: "Coming soon.......",
     description:
       "",
