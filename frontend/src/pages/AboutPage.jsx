@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import meabhout from "../assets/Cross-platform software.mp4";
 import ThemeToggle from "./../components/ThemeToggle";
-import cv from "../assets/Sandeep Sinha resume.pdf"
+import cv from "../assets/Sandeep_resume.pdf"
 const AboutPage = () => {
   return (
     <section className="py-24 px-4 relative w-full">
