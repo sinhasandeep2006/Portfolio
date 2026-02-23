@@ -34,7 +34,7 @@ const LoaderPage = () => {
 
   return (
     <div
-      className="flex flex-col items-center justify-center min-h-screen bg-gray-900 text-white relative transition-all duration-1000"
+      className="flex flex-col items-center justify-center min-h-screen bg-transparent text-white relative transition-all duration-1000"
       onMouseEnter={() => setShowSkip(true)}
       onMouseLeave={() => setShowSkip(false)}
     >
@@ -61,7 +61,7 @@ const LoaderPage = () => {
       {showSkip && (
         <button
           onClick={() => navigate("/")}
-          className="absolute bottom-10 left-2.5 right-5 bg-white text-black px-4 py-2 "
+          className="absolute bottom-10 right-5 bg-transparent text-black px-4 py-2 "
         >
           Skip
         </button>

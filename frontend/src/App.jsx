@@ -1,16 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import HomePage from './pages/HomePage';
-import ContactPage from './pages/ContactPage';
 import Navbar from './components/Navbar';
 import LoaderPage from './pages/LoaderPage';
-import EducationalPage from './pages/EducationalPage';
-import AboutPage from './pages/AboutPage';
-import SkillPage from './pages/SkillPage';
-import ProjectPage from './pages/ProjectPage';
 import ErrorBoundary from './components/ErrorBoundary';
 import NotfoundPage from './pages/NotfoundPage';
-
+import ScrollToHash from './components/ScrollToHash';
+import ShimmerCursor from './components/ShimmerCursor';
 const App = () => {
   const [showLoader, setShowLoader] = useState(() => {
     // Only show loader on first load (not on route changes)
@@ -33,11 +29,12 @@ const App = () => {
 
   return (
     <>
+      <ScrollToHash />
+      <ShimmerCursor />
       <Navbar />
       <ErrorBoundary>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          
           <Route path="*" element={<NotfoundPage />} />
         </Routes>
       </ErrorBoundary>

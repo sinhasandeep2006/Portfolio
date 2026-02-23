@@ -5,17 +5,21 @@ import HeroSection from "./../components/HeroSection";
 import EducationalPage from "./EducationalPage";
 import SkillPage from "./SkillPage";
 import AboutPage from './AboutPage';
+import ProjectPage from "./ProjectPage";
+import ContactPage from "./ContactPage";
 
 const HomePage = () => {
   return (
-    <div className="min-h-screen bg-background text-foreground overflow-x-hidden ">
+    <div className="min-h-screen bg-transparent text-foreground overflow-x-hidden " id="#">
       <ThemeToggle />
       <StarBackGround />
       <main>
         <HeroSection />
         <AboutPage />
-      <EducationalPage />
       <SkillPage />
+      <ProjectPage />
+      <EducationalPage />
+          <ContactPage />
       </main>
     </div>
   );

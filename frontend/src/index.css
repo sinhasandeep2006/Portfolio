@@ -64,6 +64,7 @@
   }
 }
 
+
 @layer base {
   :root {
     --background: 210 40% 98%;
@@ -95,9 +96,31 @@
     @apply scroll-smooth;
   }
    body {
-    @apply bg-background text-foreground transition-colors duration-300 ;
-    font-feature-settings:"rlig" 1,"calt";
-  }
+  @apply text-foreground transition-colors duration-300;
+  font-feature-settings: "rlig" 1, "calt";
+
+  background-color: hsl(var(--background));
+
+  background-image: linear-gradient(
+    to right top,
+    #d16ba5,
+    #c777b9,
+    #ba83ca,
+    #aa8fd8,
+    #9a9ae1,
+    #8aa7ec,
+    #79b3f4,
+    #69bff8,
+    #52cffe,
+    #41dfff,
+    #46eefa,
+    #5ffbf1
+  );
+
+  background-attachment: fixed;
+  background-size: cover;
+   cursor: none;
+}
 }
 
 @utility container {
@@ -164,4 +187,39 @@
 
 .transform-style-preserve-3d {
   transform-style: preserve-3d;
+}
+.shimmer-cursor {
+  width: 32px;
+  height: 32px;
+  border-radius: 9999px;
+
+  /* 🔥 gradient shimmer color */
+  background: radial-gradient(
+      circle at center,
+      rgba(255,255,255,0.7) 0%,
+      rgba(255,255,255,0.2) 20%,
+      transparent 60%
+    ),
+    linear-gradient(
+      to right top,
+      #ec128e,
+      #e70a97,
+      #e107a1,
+      #d90bab,
+      #d014b5,
+      #c51fb7,
+      #ba27b9,
+      #ae2dbb,
+      #a033b5,
+      #9237ae,
+      #853aa7,
+      #793c9f
+    );
+
+  filter: blur(8px);
+  transform: translate(-50%, -50%);
+  transition: transform 0.08s linear;
+
+  mix-blend-mode: screen;
+  pointer-events: none;
 }

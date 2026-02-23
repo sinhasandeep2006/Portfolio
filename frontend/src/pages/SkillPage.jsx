@@ -7,6 +7,10 @@ const skills = {
     { name: "CSS3", level: 100 },
     { name: "JavaScript", level: 95 },
     { name: "React.js", level: 90 },
+    { name: "Redux", level: 85 },
+    { name: "TypeScript", level: 80 },
+    { name: "Next.js", level: 80 },
+    {name: "Redis", level: 70},
     { name: "Node.js", level: 90 },
     { name: "RestAPI", level: 85 },
     { name: "ExpressJS", level: 80 },
@@ -18,6 +22,7 @@ const skills = {
      { name: "EJS", level: 80 },
   ],
   tools: [
+    {name: "Docker", level: 70},
     { name: "Postman", level: 85 },
     { name: "GitHub", level: 80 },
     { name: "SQL Workbench CE", level: 80 },
@@ -44,40 +49,60 @@ const SkillBar = ({ name, level }) => (
 
 const SkillPage = () => {
   return (
-    <section className="py-24 px-4 relative bg-background text-foreground">
+    <section
+      id="skills"
+      className="py-24 px-4 relative bg-transparent text-foreground"
+    >
       <ThemeToggle />
+
       <div className="max-w-7xl mx-auto">
-        {/* Top Section */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16 items-start">
-          {/* Left Balloon */}
-          <div className="bg-secondary border border-primary p-8 text-center rounded-2xl shadow-lg">
-            <h2 className="text-2xl font-bold mb-2">Tech Skills</h2>
-            <p className="text-sm mb-4 text-muted-foreground">
-              Tech Stack Proficiency
-            </p>
-            <hr className="border-muted w-2/3 mx-auto mb-4" />
-            <p className="text-lg font-semibold text-primary">&lt;MERN STACK/&gt;</p>
+
+        {/* ===== MERN STACK ===== */}
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-10 mb-20 items-center">
+
+          {/* LEFT — TECH STACK (2/5) */}
+          <div className="col-span-2 flex items-center justify-center">
+            <div className="bg-secondary border border-primary p-10 text-center rounded-2xl shadow-lg w-full h-full flex flex-col justify-center">
+              <h2 className="text-3xl font-bold mb-3">Tech Skills</h2>
+
+              <p className="text-sm text-muted-foreground mb-6">
+                Tech Stack Proficiency
+              </p>
+
+              <hr className="border-muted w-2/3 mx-auto mb-6" />
+
+              <p className="text-xl font-semibold text-primary tracking-wider">
+                &lt;MERN STACK/&gt;
+              </p>
+            </div>
           </div>
 
-          {/* Skills (Frontend/Backend Combined) */}
-          <div className="md:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-8">
+          {/* RIGHT — SKILLS (3/5) */}
+          <div className="col-span-3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8">
             {skills.mernStack.map((skill, idx) => (
               <SkillBar key={idx} name={skill.name} level={skill.level} />
             ))}
           </div>
         </div>
 
-        {/* Bottom Section */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
-          {/* Left Balloon */}
-          <div className="bg-secondary border border-primary p-8 text-center rounded-2xl shadow-lg">
-            <h2 className="text-2xl font-bold mb-2">Tools Proficiency</h2>
-            <hr className="border-muted w-2/3 mx-auto mb-4" />
-            <p className="text-lg font-semibold text-primary">&lt;FULL STACK/&gt;</p>
+        {/* ===== TOOLS ===== */}
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-10 items-center">
+
+          {/* LEFT CARD */}
+          <div className="col-span-2 flex items-center justify-center">
+            <div className="bg-secondary border border-primary p-10 text-center rounded-2xl shadow-lg w-full h-full flex flex-col justify-center">
+              <h2 className="text-3xl font-bold mb-3">Tools Proficiency</h2>
+
+              <hr className="border-muted w-2/3 mx-auto mb-6" />
+
+              <p className="text-xl font-semibold text-primary tracking-wider">
+                &lt;FULL STACK/&gt;
+              </p>
+            </div>
           </div>
 
-          {/* Tool Bars */}
-          <div className="mb-9 md:col-span-2 gap-10">
+          {/* TOOLS GRID */}
+          <div className="col-span-3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8">
             {skills.tools.map((tool, idx) => (
               <SkillBar key={idx} name={tool.name} level={tool.level} />
             ))}

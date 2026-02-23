@@ -4,15 +4,13 @@ import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom"; // ✅ Import Link
 
 const navItems = [
-  { name: "Home", path: "/" },
-  { name: "About", path: "/about" },
-  { name: "Skills", path: "/skills" },
-  { name: "Projects", path: "/projects" },
-  { name: "Education", path: "/education" },
-  { name: "Contact", path: "/contact" },
-  
+  { name: "Home", path: "/#" },
+  { name: "About", path: "/#about" },
+  { name: "Skills", path: "/#skills" },
+  { name: "Projects", path: "/#projects" },
+  { name: "Experience", path: "/#education" },
+  { name: "Contact", path: "/#contact" },
 ];
-
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
