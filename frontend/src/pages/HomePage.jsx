@@ -2,6 +2,9 @@ import React from "react";
 import ThemeToggle from "./../components/ThemeToggle";
 import StarBackGround from "../components/StarBackGround";
 import HeroSection from "./../components/HeroSection";
+import EducationalPage from "./EducationalPage";
+import SkillPage from "./SkillPage";
+import AboutPage from './AboutPage';
 
 const HomePage = () => {
   return (
@@ -10,6 +13,9 @@ const HomePage = () => {
       <StarBackGround />
       <main>
         <HeroSection />
+        <AboutPage />
+      <EducationalPage />
+      <SkillPage />
       </main>
     </div>
   );
