@@ -31,12 +31,6 @@ const HeroSection = () => {
             Passionate about architecture, documentation, and making tech work
             seamlessly.
           </p>
-
-          <div className="pt-4 opacity-0 animate-fade-in-delay-4">
-            <Link to="/projects" className="cosmic-button">
-              View My Work
-            </Link>
-          </div>
         </div>
       </div>
 

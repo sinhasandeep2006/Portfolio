@@ -73,9 +73,7 @@ const AboutPage = () => {
 
             {/* Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Link to="/contact" className="cosmic-button">
-                Get In Touch
-              </Link>
+              
 
               <a
                 href={cv}
