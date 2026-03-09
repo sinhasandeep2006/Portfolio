@@ -29,7 +29,7 @@ const educationData = [
     institution: "B.Tech in Computer Science & Engineering",
     degree:"GGSIPU ",
     duration: "2023 – Present",
-     score: "8.5 CGPA",
+     score: "8.8 CGPA",
   },
 ];
 
