@@ -2,9 +2,15 @@ import React, { useEffect, useRef, useState } from "react";
 import ThemeToggle from "./../components/ThemeToggle";
 const educationData = [
   {
+    institution: "SDE intern",
+    degree:"voyagex.ai",
+    duration: "March 2026- Present",
+    score: "Gurugaon - Haryana",
+  },
+  {
     institution: "Web Developer Intern",
     degree:"UnlistedShareWala",
-    duration: "Feb 2026 – Present",
+    duration: "Feb 2026 – March 2026",
     score: "Hybrid (Onsite – Delhi)",
   },
   {
