@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "destination": "https://sandeep-sinha-one.vercel.app/:path*",
+      "permanent": true
+    }
+  ]
+}
