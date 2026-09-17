@@ -1,8 +1,8 @@
 {
   "redirects": [
     {
-      "source": "/:path*",
-      "destination": "https://sandeep-sinha-one.vercel.app/:path*",
+      "source": "/(.*)",
+      "destination": "https://sandeep-sinha-one.vercel.app/$1",
       "permanent": true
     }
   ]
